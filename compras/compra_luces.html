@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Luces</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../carrito.html"><img src="../imagenes/Carrito.jpeg" alt="Carrito de Compras"></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Compras</button>
+            <div class="dropdown-content">
+                <a href="compra_packs.html">Packs</a>
+                <a href="compra_luces.html">Luces</a>
+                <a href="compra_camaras.html">Cámaras</a>
+                <a href="compra_sensores.html">Sensores</a>
+            </div>
+        </div>
+        <a href="../nosotros.html" class="header-button">Sobre Nosotros</a>
+        <div class="user-dropdown">
+            <img src="../imagenes/usuario.png" alt="Usuario">
+            <div class="user-dropdown-content">
+                <a href="../iniciar_sesion.html">Iniciar Sesión</a>
+                <a href="../registrarse.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+ 
+        <nav class="sidebar">
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" name="ordenar" value="precio" checked>
+                    Ordenar por Precio
+                </label>
+                <label>
+                    <input type="radio" name="ordenar" value="menor50k">
+                    Menores a $50.000
+                </label>
+                <label>
+                    <input type="radio" name="ordenar" value="menor100k">
+                    Menores a $100.000
+                </label>
+            </div>
+
+            <div class="checkboxes">
+                <label>
+                    <input type="checkbox" name="luminosidad"> Alta luminosidad
+                </label>
+                <label>
+                    <input type="checkbox" name="bajoConsumo"> Bajo Consumo
+                </label>
+                <label>
+                    <input type="checkbox" name="luzCalida"> Luz Cálida
+                </label>
+                <label>
+                    <input type="checkbox" name="luzRGB"> Luz RGB
+                </label>
+                <label>
+                    <input type="checkbox" name="luzInteligente"> Luz Inteligente
+                </label>
+            </div>
+        </nav>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="/ProyectoCoder/imagenes/LuzdeTecho.jpg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Luz de Techo Elegante</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="/ProyectoCoder/imagenes/Lampara.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Lámpara de Pie Moderna</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="reserved">Derechos Reservados</p>
+        <a href="../nosotros.html" class="contact-btn">Contáctanos</a>
+    </footer>
+    
+</body>
+</html>

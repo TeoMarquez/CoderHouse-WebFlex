@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="carrito.html"><img src="../ProyectoCoder/imagenes/Carrito.jpeg" alt="Carrito de Compras"></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Compras</button>
+            <div class="dropdown-content">
+                <a href="../ProyectoCoder/compras/compra_packs.html">Packs</a>
+                <a href="../ProyectoCoder/compras/compra_luces.html">Luces</a>
+                <a href="../ProyectoCoder/compras/compra_camaras.html">Cámaras</a>
+                <a href="../ProyectoCoder/compras/compra_sensores.html">Sensores</a>
+            </div>
+        </div>
+        <a href="nosotros.html" class="header-button">Sobre Nosotros</a>
+        <div class="user-dropdown">
+            <img src="../ProyectoCoder/imagenes/usuario.png" alt="Usuario">
+            <div class="user-dropdown-content">
+                <a href="iniciar_sesion.html">Iniciar Sesión</a>
+                <a href="registrarse.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="/ProyectoCoder/imagenes/Promocion_alarmaWifi.jpg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Nombre del Producto 1</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $20.00</p>
+            </div>
+            <div class="product-checkbox">
+                <input type="checkbox" id="product1" name="product1">
+                <label for="product1">Agregar al carrito</label>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="/ProyectoCoder/imagenes/Promocion_Camaras.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Nombre del Producto 2</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $30.00</p>
+            </div>
+            <div class="product-checkbox">
+                <input type="checkbox" id="product2" name="product2">
+                <label for="product2">Agregar al carrito</label>
+            </div>
+        </section>
+        <section class="checkout-buttons">
+            <a href="index.html" class="pay-button">Volver Atrás</a>
+            <button class="pay-button">Pagar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="reserved">Derechos Reservados</p>
+        <a href="nosotros.html" class="contact-btn">Contáctanos</a>
+    </footer>
+    
+</body>
+</html>
