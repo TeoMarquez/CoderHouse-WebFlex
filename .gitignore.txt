@@ -1,0 +1,10 @@
+# Ignorar carpetas específicas
+/compras/
+/imagenes/
+
+# Ignorar imágenes
+*.png
+*.jpg
+
+# Ignorar archivos HTML
+*.html

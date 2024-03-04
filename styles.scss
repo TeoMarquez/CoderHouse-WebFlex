@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --dropdown-max-height: 200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeInPage 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Hace que el contenido principal crezca para ocupar el espacio disponible */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+}
+
+.dropdown-wrapper {
+    float: left;
+    margin-left: 10px;
+}
+
+.dropbtn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1d0d0;
+}
+
+.dropdown-wrapper:hover .dropdown-content,
+.user-dropdown:hover .user-dropdown-content,
+.category-dropdown-wrapper:hover .category-dropdown {
+    max-height: 200px;
+    overflow: visible;
+}
+
+.header-button {
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.user-profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.user-dropdown {
+    float: right;
+}
+
+.user-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    background-color: #f9f9f9;
+}
+
+.user-dropdown-content a {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.user-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+    max-height: var(--dropdown-max-height);
+}
+
+.category-dropdown-wrapper {
+    margin-bottom: 20px;
+}
+
+.category-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    background-color: #f9f9f9;
+}
+
+.category-dropdown a {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.category-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.category-dropdown-wrapper:hover .category-dropdown {
+    max-height: var(--dropdown-max-height);
+}
+
+.product-image {
+    width: 200%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-image.fade-in {
+    opacity: 1;
+}
+
+.rating {
+    font-size: 24px;
+    color: gold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rating:hover {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: 40%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.about-us {
+    width: 200%;
+}
+
+img {
+    width: 10%;
+    height: auto;
+    max-width: 100%;
+}
+
+.rating {
+    font-size: 24px;
+    color: gold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+    clear: both;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior del contenedor principal */
+}
+
+
+.reserved {
+    text-decoration: underline;
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+@media (max-width: 600px) {
+    section,
+    .sections-about-us section {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
