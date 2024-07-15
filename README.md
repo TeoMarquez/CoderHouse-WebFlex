@@ -25,4 +25,4 @@ Tecnologías Utilizadas
 HTML5
 CSS3 (Sass)
 Bootstrap 4
-JavaScript (opcional)
+JavaScript
